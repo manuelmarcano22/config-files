@@ -11,3 +11,8 @@ Commands
 * `Control + b` before any command
 * `Control + b` then `-` to split window vertically in current path
 * `Control + b` then `|` to split window horizontally in current path
+
+# awesome-wm-config-files
+Version: **Awesome 3.5.6** Awesome Homepage: http://awesome.naquadah.org
+
+Personal Configuration files for the Awesome Window Manager. Nothing really special but just in case I might need it again. 
