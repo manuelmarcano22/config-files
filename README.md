@@ -3,6 +3,7 @@ tmux, awesome-wm, xterm and vim configuration files from my laptop
 
 
 #Tmux:
+[Tmux](http://tmux.sourceforge.net/) configuration file. Includes Vim-like bindings, easier to remember split pane,  and modify the status bar to show battery life, time and date. 
 
 Commands
 --------
