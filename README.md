@@ -20,6 +20,7 @@ Personal Configuration files for the Awesome Window Manager. Nothing really spec
 #VIM - Vi IMproved 7.4
 Includes some binding to easy comment and uncomment in Python, LaTeX and Javascript, to save and save as sudo. 
 
+
 #xterm
 
 
