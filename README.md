@@ -1,5 +1,5 @@
 # config-files
-tmux, awesome-wm, xterm and vim configuration files from my laptop
+tmux, awesome-wm, xterm, bash and vim configuration files from my personal laptop
 
 
 #Tmux:
@@ -18,10 +18,14 @@ Version: **Awesome 3.5.6** Awesome Homepage: http://awesome.naquadah.org
 Personal Configuration files for the Awesome Window Manager. Nothing really special but just in case I might need it again. 
 
 #VIM - Vi IMproved 7.4
-Includes some binding to easy comment and uncomment in Python, LaTeX and Javascript, to save and save as sudo. 
+Includes some binding to easy comment and uncomment in Python, LaTeX and Javascript. Upper W and Q to quit and save as sudo. 
 
 
 #xterm
+
+#.bashrc
+Include some aliases, extended globbing and greeting with cowsay and taskwarrior tasks. 
+
 
 
 
