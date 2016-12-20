@@ -1,3 +1,4 @@
+
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -12,12 +13,11 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 
 awful.util.spawn_with_shell("xcompmgr" )
-awful.util.spawn_with_shell("/usr/games/oneko -tofocus" )
+awful.util.spawn_with_shell("/usr/bin/oneko -tofocus" )
 
 --awful.util.spawn_with_shell("xcompmgr -cF &")
 
 -- Load Debian menu entries
-require("debian.menu")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -46,10 +46,11 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/usr/share/awesome/themes/blue/theme.lua")
+beautiful.init("/usr/share/awesome/themes/sky/theme.lua")
 -- This is used later as the default terminal and editor to run.
 --terminal = "x-terminal-emulator"
-terminal = "xterm -e tmux"
+terminal = "xterm -e 'tmux attach || tmux new' "
+terminal2 = "xterm"
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -105,7 +106,6 @@ myawesomemenu = {
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "Debian", debian.menu.Debian_menu.Debian },
                                     { "open terminal", terminal }
                                   }
                         })
@@ -532,4 +532,3 @@ battimer:start()
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
--- }}}

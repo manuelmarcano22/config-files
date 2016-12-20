@@ -1,0 +1,8 @@
+import rlcompleter, readline
+readline.parse_and_bind('tab:complete')
+
+import numpy as np
+import os
+def clear():
+	os.system('clear')
+

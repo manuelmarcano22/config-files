@@ -90,4 +90,3 @@ vnoremap -% :s%^\%%%<cr>
 vnoremap / :s/^/\//<cr>
 vnoremap -/ :s/^\///<cr>
 
-
