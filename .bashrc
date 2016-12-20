@@ -212,7 +212,7 @@ function random_huedifgit
 
 PROMPT_COMMAND="random_huedifgit"
 
-#xmodmap ~/.speedswapper
+xmodmap ~/.speedswapper
 
 export PYSYN_CDBS=/home/mmarcano22/Documents/Computer/pysynphot
 
@@ -231,5 +231,3 @@ export EDITOR="$VISUAL"
 
 PATH=$PATH:/home/mmarcano22/.gem/ruby/2.3.0/bin
 TZ='America/Chicago'; export TZ
-
-
