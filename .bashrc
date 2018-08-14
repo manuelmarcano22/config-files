@@ -92,6 +92,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+
+alias vim='vimx'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -213,21 +216,30 @@ function random_huedifgit
 PROMPT_COMMAND="random_huedifgit"
 
 xmodmap ~/.speedswapper
+xset b off
 
-export PYSYN_CDBS=/home/mmarcano22/Documents/Computer/pysynphot
+
+#export PYSYN_CDBS=/home/mmarcano22/Documents/Computer/pysynphot
 
 
 PATH=$PATH:/home/mmarcano22/Documents/Computer/Montage/bin
-source /usr/share/git/completion/git-prompt.sh
+source /usr/share/git-core/contrib/completion/git-prompt.sh
 set -o vi
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
 #wget -q --spider http://google.com
 #if [ $? -eq 0 ]; then
-#	    mlbgame-update --hide > /dev/null &
+#	    /home/mmarcano22/anaconda3/bin/mlbgame-update --hide > /dev/null &
 #	    disown $!
 #fi
 
 PATH=$PATH:/home/mmarcano22/.gem/ruby/2.3.0/bin
 TZ='America/Chicago'; export TZ
+
+#python tmux/games.py &
+
+# added by Anaconda3 4.4.0 installer
+#export PATH="/home/mmarcano22/anaconda3/bin:$PATH"
+. /home/mmarcano22/anaconda3/etc/profile.d/conda.sh
+conda activate
