@@ -29,5 +29,7 @@ Include some aliases, extended globbing and greeting with cowsay and taskwarrior
 
 
 
+In the .bashrc I had to include trap 'stty sane' INT to make Ctrl C work on my scientidi linux station
+
 
 
