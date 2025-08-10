@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Set Keyboard
+Exec=xmodmap ~/.speedswapper
+Terminal=false
+Type=Application
